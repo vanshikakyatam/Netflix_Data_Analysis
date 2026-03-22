@@ -12,6 +12,7 @@ type_count.plot(kind='bar')
 plt.title("Movies vs TV Shows")
 plt.xlabel("Type")
 plt.ylabel("Count")
+plt.savefig("images/movies_tvshows.png")
 plt.show()
 
 # Top Countries
@@ -23,6 +24,7 @@ top_countries.plot(kind='bar')
 plt.title("Top 5 Content Producing Countries")
 plt.xlabel("Country")
 plt.ylabel("Count")
+plt.savefig("images/top_countries.png")
 plt.show()
 
 # Content Trend Over Years
@@ -34,6 +36,7 @@ yearly_content.plot(kind='line')
 plt.title("Content Added Over Years")
 plt.xlabel("Year")
 plt.ylabel("Number of Shows")
+plt.savefig("images/yearly_trend.png")
 plt.show()
 
 # Rating Analysis
@@ -41,4 +44,5 @@ df['rating'].value_counts().plot(kind='bar')
 plt.title("Content Ratings Distribution")
 plt.xlabel("Rating")
 plt.ylabel("Count")
+plt.savefig("images/rating_distribution.png")
 plt.show()
